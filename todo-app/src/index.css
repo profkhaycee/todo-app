@@ -11,3 +11,124 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background: #0f172a;
+  font-family: sans-serif;
+}
+
+.app {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.progress-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #555;
+  padding: 20px;
+  color: white;
+}
+
+.progress-circle {
+  background: #84cc16;
+  border-radius: 50%;
+  padding: 20px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.progress-circle > h1 {
+  margin: auto;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+}
+.input-group button {
+  background: #84cc16;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  color: white;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #555;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: green;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.filters{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 16px;
+}
+.filters button {
+  margin-right: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.filters button:nth-child(1) {
+  background: #3f49e0;
+  color: white;
+}
+.filters button:nth-child(2), .filters button:nth-child(3) {
+  background: #0628ec;
+  color: white;
+}
+.filters button:nth-child(4) {
+  background: #e11d48;
+  color: white;
+}
+
+.actions button{
+  background: none;
+  border: none;
+}
+
