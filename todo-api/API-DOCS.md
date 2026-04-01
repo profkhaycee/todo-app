@@ -7,6 +7,8 @@ It supports task creation, completion tracking, filtering, deletion, and drag-an
 
 The API is designed to be consumed by a frontend application (e.g., React).
 
+I have added a postman collection file in the repo. you can find it at todo-api/TODO-APIs.postman_collection. 
+
 ---
 
 ##  Base URL
@@ -32,7 +34,7 @@ http://127.0.0.1:8000/api
   "status": "success",
   "message": "Optional message",
   "data": {},
-  "meta": {
+  "progress": {
     "total": 5,
     "completed": 2,
     "progress": "2/5"
@@ -85,7 +87,7 @@ GET /todos?filter=active
       "order": 1
     }
   ],
-  "meta": {
+  "progress": {
     "total": 1,
     "completed": 0,
     "progress": "0/1"
@@ -124,7 +126,7 @@ GET /todos?filter=active
     "is_completed": false,
     "order": 1
   },
-  "meta": {
+  "progress": {
     "total": 1,
     "completed": 0,
     "progress": "0/1"
@@ -158,7 +160,7 @@ GET /todos?filter=active
 {
   "status": "success",
   "message": "Todo deleted successfully",
-  "meta": {
+  "progress": {
     "total": 0,
     "completed": 0,
     "progress": "0/0"
@@ -182,7 +184,7 @@ GET /todos?filter=active
     "id": 1,
     "is_completed": true
   },
-  "meta": {
+  "progress": {
     "total": 1,
     "completed": 1,
     "progress": "1/1"
@@ -202,7 +204,7 @@ GET /todos?filter=active
 {
   "status": "success",
   "message": "Completed todos cleared",
-  "meta": {
+  "progress": {
     "total": 0,
     "completed": 0,
     "progress": "0/0"
@@ -262,34 +264,12 @@ GET /todos?filter=active
 
 ## 🧠 Notes
 
-* Todos are ordered using the `order` field
-* Drag-and-drop is handled via the reorder endpoint
-* Progress is returned in all responses via `meta`
+* Progress is returned in all responses via `progress`
 * API follows RESTful principles
 
 ---
 
-## 🛠️ Tech Stack
 
-* Laravel (Backend API)
-* MySQL (Database)
-* React (Frontend - separate)
-
----
-
-## ▶️ Running the Project
-
-```bash
-php artisan serve
-```
-
-API will be available at:
-
-```
-http://127.0.0.1:8000/api
-```
-
----
 
 ## 📬 Postman Collection
 
