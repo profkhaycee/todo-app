@@ -25,6 +25,7 @@ function App() {
     setProgress(res.data.progress);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchTodos();
   }, [filter]);
