@@ -30,3 +30,8 @@ todo-project/
 ```
 
 ---
+
+You can find the docker documentation at /DOCKER-DOCS.md
+
+You can also find the API documentation at /todo-api/API-DOCS.md
+
