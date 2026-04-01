@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log
+
+# React build
+todo-app/build/
+
+# Laravel
+todo-api/vendor/
+todo-api/node_modules/
+todo-api/storage/*.key
+#todo-api/.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Docker
+*.env
